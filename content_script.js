@@ -7,10 +7,10 @@ title = title ? title.textContent : '';
 var album = document.getElementsByClassName('player-album')[0];
 album = album ? album.textContent : '';
 
-var additionalInfo = {
+var data = {
   'artist': artist,
   'title': title,
   'album': album
 };
 
-chrome.runtime.connect().postMessage(additionalInfo);
+chrome.runtime.connect().postMessage(data);
