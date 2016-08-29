@@ -1,0 +1,24 @@
+{
+  "name": "Open lyrics for Google Music",
+  "description": "Open a new tab with the lyrics for the current song.",
+  "version": "0.1.0",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": { "128": "music-note_128x128_alt.png" },
+  "options_page": "options.html",
+  "permissions": [
+    "tabs", "http://play.google.com/music/*", "https://play.google.com/music/*"
+  ],
+  "page_action": {
+    "default_icon": {
+      "24": "music-note_24x24_alt.png",
+      "128": "music-note_128x128_alt.png"
+    },
+    "default_title": "Search lyrics for this song"
+  },
+
+
+  "manifest_version": 2
+}
